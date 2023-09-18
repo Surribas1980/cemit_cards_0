@@ -12,7 +12,7 @@ li{
   text-align: center;
 }
 li:nth-child(2n){
-  background-color: #e4e4e4;
+  background-color: #ececed;
 }
 li div{
   flex: 1;
@@ -37,13 +37,32 @@ li div[name="datos-unicos"]{
 }
 #datosUsuario0{
     font-family: 'Raleway', sans-serif;
-    background-color: #cacafb;
+    background-color: #e7e7e7;
     padding: 2vh;
     font-size: 18px;
     border: 1px solid transparent;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
 }
+  .order{
+    border:1px solid #dedede;
+    border-radius:20px;
+    padding:10px;
+  }
+  .order[order-state="pagado"] {
+    color: #6875b6;
+    background-color:#a0e3a0;
+  }
+
+  .order[order-state="pendiente"] {
+    color: #6875b6;
+    background-color:#f2c687;
+  }
+
+  .order[order-state="cancelado"] {
+    color: #6875b6;
+    background-color:#ff8080;
+  }
 @media (min-width:300px){
   /*---- body ----*/
     body{
@@ -180,32 +199,61 @@ li div[name="datos-unicos"]{
       border:1px solid #e3e3e3;
       border-radius: 10px;
       background-color:white;
-      box-shadow: -16px 17px 56px 16px rgba(0,0,0,0.1);
+      /*box-shadow: inset 11px 10px 15px -3px rgba(77, 169, 201 ,0.7);*/
+      box-shadow: 11px 10px 15px -3px rgba(77, 169, 201 ,0.5);
       margin:10px;
       flex:1;
     }
-    .wrape-ultimas-facturas > .ultimas-facturas{
-      padding: 1px;
-      
-    }
+    
     .ultimas-facturas{
       display:flex;
       flex-direction:column;
-      gap:10px;
+      /*gap:10px;*/
       justify-content:space-evenly;
+    }
+    .ultimas-facturas > div{
+      padding:3vh;
     }
     .header-ultimas-facturas{
       display:flex;
-      justify-content:space-evenly;
+      align-items:center;
+      justify-content:space-between;
+      
     }
+  .pad-botom{
+    padding-bottom: 0;
+  }
+  .padtop{
+     padding-top: 0;
+  }
     .dinero-ultimas-facturas{
       display:flex;
-      align-content:left;
+      flex-direction:column;
+      font-size: 5vh;
+      font-family:'Poppins',sans-serif;
+      font-weight:600;
+     
+    }
+    .mensaxe{
+      font-size: 2vh;
+      
+      color:#d1d1d1;
     }
     .footer-ultimas-facturas{
       display:flex;
-      align-content:center;
-      background-color:#ccccff;
+      justify-content:center;
+      align-items: center;
+      background-color:#ececed;
+      border-bottom-left-radius:10px;
+      border-bottom-right-radius:10px;
+    }
+
+    .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 200,
+    'GRAD' 0,
+    'opsz' 24
     }
 }
 @media (max-width:600px){
