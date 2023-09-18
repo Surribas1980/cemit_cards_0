@@ -4,7 +4,9 @@
   padding:0;
   border: none;
 }
-
+section.central{
+  text-align:center;
+}
 li{
   list-style:none;
   display:flex;
@@ -105,10 +107,12 @@ li div[name="datos-unicos"]{
       letter-spacing:1.5px;
     }
     span[name="avisos"]{
-    font-family:'Poppins',fantasy;
-    font-size:24px;
-    margin:5vh;
-  }
+      font-family:'Poppins',fantasy;
+      font-size:24px;
+      margin:5vh;
+      text-align:left;
+      text-transform: uppercase;
+    }
     ul{
       padding: 0;
       margin:10px;
@@ -165,10 +169,13 @@ li div[name="datos-unicos"]{
     }
 
     /* LISTA CLIENTES */
+    .wraper-lista{
+      margin:5vw;
+    }
     .lista-clientes{
       /*border:1px solid #b9d0d6;*/
       border-radius:5px;
-      margin:5vw;
+      
     }
     .titulos-lista-clientes{
       font-family:fantasy;
