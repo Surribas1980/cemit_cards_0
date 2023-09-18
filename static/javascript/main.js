@@ -15,7 +15,7 @@ const fetchData = async (url) => {
   
     console.log(data)
   
-    /****** MODIFICO OS DATOS DO HTML ******/
+    /***** MODIFICO OS DATOS DO HTML *****/
   
     referenciaSrc.setAttribute('src',imaxenLarge);
     referenciaClase.textContent = `${oNome} ${oPrimeiroApelido} ${oSegundoApelido}`; 
