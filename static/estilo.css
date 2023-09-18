@@ -86,16 +86,39 @@ li div[name="datos-unicos"]{
   }
     main > section:nth-child(1){
       background-color:#3584e4;
-      padding:5vw;
+      padding:1vw;
       text-align:center;
     }
+  /* BLOQUE: ingresos-pendentes */
+  .ingresos-pendentes{
+    display:flex;
+    justify-content:space-around;
+      gap:10vw;
+  }
+  .ingresos-pendentes > article {
+    font-family:'Poppins',fantasy;
+    
+  }
+  
   /* etiquetas */
-    span[name="money-client"]{
+    div[name="money-client"]{
       font-size:24px;
+       color:white;
+      /*padding:3vh;*/
     }
-    span[name="gastado-client"]{
+    div[name="ver-todo"]{
+      text-align:center;
       font-size:16px;
-      font-family: math;
+      border-radius:20px;
+      background-color:#99c1f1;
+      border:1px solid gray;
+      padding:1vh;
+    }
+    div[name="estado"]{
+      font-size:18px;
+      text-transform:uppercase;
+      color:white;
+      /*padding:3vh;*/
     }
     h3{
       margin:0;
