@@ -187,7 +187,11 @@ li div[name="datos-unicos"]{
     text-align: left;
     font-family: 'Poppins', sans-serif;
    }
+  
     /* facturas */
+    .facturas{
+      margin: 5vw;
+    }
     .facturas > div{
       display:flex;
       justify-content:space-between;
@@ -211,28 +215,25 @@ li div[name="datos-unicos"]{
       /*gap:10px;*/
       justify-content:space-evenly;
     }
-    .ultimas-facturas > div{
-      padding:3vh;
-    }
+    
     .header-ultimas-facturas{
       display:flex;
       align-items:center;
       justify-content:space-between;
       
+      padding: 3vh 3vh 0;
     }
-  .pad-botom{
-    padding-bottom: 0;
+  .header-ultimas-facturas > .nome-ultimas-facturas{
+    font-size:2.5vh;
   }
-  .padtop{
-     padding-top: 0;
-  }
+ 
     .dinero-ultimas-facturas{
       display:flex;
       flex-direction:column;
       font-size: 5vh;
       font-family:'Poppins',sans-serif;
       font-weight:600;
-     
+     padding: 0 3vh 3vh;
     }
     .mensaxe{
       font-size: 2vh;
@@ -246,6 +247,7 @@ li div[name="datos-unicos"]{
       background-color:#ececed;
       border-bottom-left-radius:10px;
       border-bottom-right-radius:10px;
+      padding: 2vh;
     }
 
     .material-symbols-outlined {
