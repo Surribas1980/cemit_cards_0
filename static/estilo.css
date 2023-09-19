@@ -308,7 +308,7 @@
     .mensaxe{
       font-size: 2vh;
       
-      color:#d1d1d1;
+      color:#a2a2a2;
     }
     .footer-ultimas-facturas{
       display:flex;
@@ -331,7 +331,43 @@
     'opsz' 24
     }
 
-@media (max-width:600px){
-  
+@media (max-width:1200px){
+  ul{
+    display:none;
+  }
+  .facturas > div {
+    flex-wrap: wrap;
+  }
+  .ingresos-pendentes{
+    flex-wrap: wrap;
+    gap:1vw;
+  }
+  .ingresos-pendentes > article{
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid #f9f7f7;
+    padding: 3vw;
+    /* Arriba | Derecha | Abajo | Izquierda */
+    /*margin: 0vw 5vw 0vw 5vw;*/
+  }
+  .ingresos-pendentes > article[name="terceira"]{
+    border:none;
+  }
+  div[name="money-client"]{
+    text-align: left;
+    display: inline;
+    font-size: 4vh;
+  }
+  div[name="ver-todo"] {
+    display: inline;
+  }
+  div[name="estado"]{
+    font-size:14px;
+  }
+  .wraper-ingresos-pendentes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
