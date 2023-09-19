@@ -38,22 +38,22 @@ const pintarLista = (listaUsuarios,cincoUsuarios,listUsers)=>{
     if(contador == 0){
       internoLista.setAttribute('id',`datosUsuario${contador}`)
       internoLista.innerHTML = `
-              <div>STATUS</div>
-              <div></div>
+              <div name="status">STATUS</div>
+              <div name="status"></div>
               <div>Usuario
                 <!--
                 first-name
                 email
                 -->
               </div>
-              <div>Datos persoais
+              <div name="status">Datos persoais
                 <!--
                 Traballo
                 Idade
                 -->
               </div>
               
-              <div>Num Pedido</div>
+              <div name="status">Num Pedido</div>
               <div>Gastado</div>
     `;
     listaOrdeada.append(internoLista)
