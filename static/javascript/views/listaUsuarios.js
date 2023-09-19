@@ -26,14 +26,14 @@ const pintarLista = (listaUsuarios,cincoUsuarios,listUsers)=>{
   console.log('pintar a lista dos seguintes usuarios: ',listaUsuarios,cincoUsuarios)
   //const numUsuarios = listaUsuarios.length;//caso real
   const numUsuarios = 9;
-  const listaOl = document.createElement('ul');
+  const listaOl = document.createElement('ul',{is:"unha-lista"});
   const lugarDeRefencia = document.querySelector('[lista-clientes]');
   listaOl.setAttribute('id','listaOrdeada')
   lugarDeRefencia.append(listaOl)
  
   for(let contador = 0; contador <= numUsuarios ;contador ++){
 
-    let internoLista = document.createElement('li')
+    let internoLista = document.createElement('li',{is:"o-li"})
     
     if(contador == 0){
       internoLista.setAttribute('id',`datosUsuario${contador}`)

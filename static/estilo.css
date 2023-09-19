@@ -113,7 +113,7 @@
     }
     div[name="ver-todo"]{
       display: flex;
-      align-items: center;
+      align-items: baseline;
       text-align:center;
       font-size:16px;
       border-radius:20px;
@@ -137,7 +137,16 @@
       /*border: 1px solid transparent;
       border-radius: 50%;
       background-color: #81a1e5;*/
-      display: inline-block;
+      /*display: inline-block;*/
+      width: 20px;
+    }
+  span[name="frecha2"]{
+      /*border: 1px solid transparent;
+      border-radius: 50%;
+      background-color: #81a1e5;*/
+      /*display: inline-block;*/
+   
+    margin-left: 10px;
       width: 20px;
     }
   }
