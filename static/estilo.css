@@ -1,125 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Raleway:wght@600&display=swap');
-*{
-  margin:0;
-  padding:0;
-  border: none;
-}
-section.central{
-  text-align:center;
-}
-li{
-  list-style:none;
-  display:flex;
-  justify-content:space-evenly;
-  text-align: center;
-}
-li:nth-child(2n){
-  background-color: #ececed;
-}
-li div{
-  flex: 1;
-  text-align: center;
-}
-li div[name="lista-usuarios"]{
-      display: flex;
-      justify-content: center;
-      flex-wrap: nowrap;
-      align-items: center;
-    }
-li div[name="datos-persoais"]{
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  font-family: 'Poppins', sans-serif;
-}
-li div[name="datos-unicos"]{
-  display: flex;
-  align-self: center;
-  font-family: 'Poppins', sans-serif;
-}
-#datosUsuario0{
-    font-family: 'Raleway', sans-serif;
-    background-color: #e7e7e7;
-    padding: 2vh;
-    font-size: 18px;
-    border: 1px solid transparent;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-}
-  .order{
-    border:1px solid #dedede;
-    border-radius:20px;
-    padding:10px;
+  *{
+    margin:0;
+    padding:0;
+    border: none;
   }
-  .order[order-state="pagado"] {
-    color: #6875b6;
-    background-color:#a0e3a0;
+  section.central{
+    text-align:center;
   }
-
-  .order[order-state="pendiente"] {
-    color: #6875b6;
-    background-color:#f2c687;
-  }
-
-  .order[order-state="cancelado"] {
-    color: #6875b6;
-    background-color:#ff8080;
-  }
-@media (min-width:300px){
-  /*---- body ----*/
-    body{
+  li{
+    list-style:none;
     display:flex;
-    flex-direction:column;
-    /*gap: 10vw;*/
-    background-color: #f0f0f0;
+    justify-content:space-evenly;
+    text-align: center;
   }
-    header{
-      background-color:#f6f5f4;
-      text-align:center;
-      font-family:sans-serif;
-      padding:2vw;
-    }
-    main{
+  li:nth-child(2n){
+    background-color: #ececed;
+  }
+  li div{
+    flex: 1;
+    text-align: center;
+  }
+  li div[name="lista-usuarios"]{
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        align-items: center;
+        
+      }
+  li div[name="datos-persoais"]{
     display: flex;
     flex-direction: column;
-    gap: 1vw;
+    align-self: center;
+    font-family: 'Poppins', sans-serif;
   }
-    main > section:nth-child(1){
-      background-color:#3584e4;
-      padding:1vw;
-      text-align:center;
-    }
-  /* BLOQUE: ingresos-pendentes */
-  .ingresos-pendentes{
-    display:flex;
-    justify-content:space-around;
-      gap:10vw;
+  li div[name="datos-unicos"]{
+    display: flex;
+    align-self: center;
+    font-family: 'Poppins', sans-serif;
   }
-  .ingresos-pendentes > article {
-    font-family:'Poppins',fantasy;
-    
-  }
-  
-  /* etiquetas */
-    div[name="money-client"]{
-      font-size:24px;
-       color:white;
-      /*padding:3vh;*/
-    }
-    div[name="ver-todo"]{
-      text-align:center;
-      font-size:16px;
-      border-radius:20px;
-      background-color:#99c1f1;
-      border:1px solid gray;
-      padding:1vh;
-    }
-    div[name="estado"]{
-      font-size:18px;
-      text-transform:uppercase;
-      color:white;
-      /*padding:3vh;*/
-    }
     h3{
       margin:0;
       /*border-bottom: 1px solid black;*/
@@ -142,7 +60,117 @@ li div[name="datos-unicos"]{
       box-shadow: -16px 17px 56px 16px rgba(0,0,0,0.1);
     }
 
+    #datosUsuario0{
+        font-family: 'Raleway', sans-serif;
+        background-color: #e7e7e7;
+        padding: 2vh;
+        font-size: 18px;
+        border: 1px solid transparent;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+
+@media (min-width:300px){
+  /*---- body ----*/
+    body{
+    display:flex;
+    flex-direction:column;
+    /*gap: 10vw;*/
+    background-color: #f0f0f0;
+    }
+    header{
+      background-color:#f6f5f4;
+      text-align:center;
+      font-family:sans-serif;
+      padding:2vw;
+    }
+    main{
+      display: flex;
+      flex-direction: column;
+      gap: 1vw;
+    }
+    main > section:nth-child(1){
+      background-color:#3584e4;
+      padding:1vw;
+      text-align:center;
+    }
+  /* BLOQUE: ingresos-pendentes */
+    .ingresos-pendentes{
+      display:flex;
+      justify-content:space-around;
+        gap:10vw;
+    }
+    .ingresos-pendentes > article {
+      font-family:'Poppins',fantasy;
+      
+    }
+  
+  /* etiquetas */
+    div[name="money-client"]{
+      font-size:7vh;
+       color:white;
+      /*padding:3vh;*/
+    }
+    div[name="ver-todo"]{
+      display: flex;
+      align-items: center;
+      text-align:center;
+      font-size:16px;
+      border-radius:20px;
+      background-color:#5599ec;
+      border:1px solid transparent;
+      padding:1vh;
+      width: max-content;
+      padding: 0.2rem;
+      color: white;
+      font-weight: 600;
+    }
+    div[name="ver-todo"]:hover{
+      cursor:pointer;
+      background-color:#99c1f1;
+    }
+    span[name="ver-todo"]{
+      margin-left: 0.5vw;
+      margin-right: 0.5vw;
+    }
+    span[name="frecha"]{
+      /*border: 1px solid transparent;
+      border-radius: 50%;
+      background-color: #81a1e5;*/
+      display: inline-block;
+      width: 20px;
+    }
+  }
+    div[name="estado"]{
+      font-size:18px;
+      text-transform:uppercase;
+      color:white;
+      text-align: left;
+      font-weight: 600;
+    }
+
+
   /* definidas por min */
+    /* Estado de pedido */
+    .order{
+      border:1px solid transparent;
+      border-radius:20px;
+      padding:10px;
+    }
+    .order[order-state="pagado"] {
+      color: #6875b6;
+      background-color:#d4ffd4;
+    }
+  
+    .order[order-state="pendiente"] {
+      color: #6875b6;
+      background-color:#ffe9c9;
+    }
+  
+    .order[order-state="cancelado"] {
+      color: #6875b6;
+      background-color:#ffc8c8;
+    }
     /*CARD CLIENT*/
     .card-client{
       border:1px solid #979393;
@@ -161,10 +189,10 @@ li div[name="datos-unicos"]{
       margin: 9px;
     }*/
     .imagen-client{
-      border:1px solid #adadad;
+      border:1px solid transparent;
       border-radius:50%;
-      background-color:#9696ed;
-      margin: 9px;
+      /*background-color:#9696ed;*/
+      margin: 3px;
       width: 6vh;
     }
     .card-client > .info-client{
@@ -210,8 +238,11 @@ li div[name="datos-unicos"]{
      text-align: left;
      font-size: 17px;
      font-family: 'Poppins', sans-serif;
-     font-weight:200;
-   }
+     font-weight: 600;
+     color: #647ba5;
+    }
+    
+   
     .lista-nomes ~ div {
     font-size: 10px;
     text-align: left;
@@ -253,9 +284,9 @@ li div[name="datos-unicos"]{
       
       padding: 3vh 3vh 0;
     }
-  .header-ultimas-facturas > .nome-ultimas-facturas{
-    font-size:2.5vh;
-  }
+    .header-ultimas-facturas > .nome-ultimas-facturas{
+      font-size:2.5vh;
+    }
  
     .dinero-ultimas-facturas{
       display:flex;
@@ -275,11 +306,14 @@ li div[name="datos-unicos"]{
       justify-content:center;
       align-items: center;
       background-color:#ececed;
-      border-bottom-left-radius:10px;
-      border-bottom-right-radius:10px;
+      border-bottom-left-radius:8px;
+      border-bottom-right-radius:8px;
       padding: 2vh;
     }
-
+    .footer-ultimas-facturas:hover{
+      background-color:#99c1f1;
+      cursor:pointer;
+    }
     .material-symbols-outlined {
     font-variation-settings:
     'FILL' 0,
@@ -287,7 +321,7 @@ li div[name="datos-unicos"]{
     'GRAD' 0,
     'opsz' 24
     }
-}
+
 @media (max-width:600px){
   
 }
