@@ -1,3 +1,4 @@
+@import "./css/variables/variables-globales.css";
 @import "./css/global/global.css";
 @import "./css/mobil/mobil.css";
 @import "./css/pc/pc.css";
