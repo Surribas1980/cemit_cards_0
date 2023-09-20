@@ -62,3 +62,25 @@
       background-color:#99c1f1;
       cursor:pointer;
     }
+
+/* definidas por min */
+    /* Estado de pedido */
+    .order{
+      border:1px solid transparent;
+      border-radius:20px;
+      padding:10px;
+    }
+    .order[order-state="pagado"] {
+      color: #6875b6;
+      background-color:#d4ffd4;
+    }
+  
+    .order[order-state="pendiente"] {
+      color: #6875b6;
+      background-color:#ffe9c9;
+    }
+  
+    .order[order-state="cancelado"] {
+      color: #6875b6;
+      background-color:#ffc8c8;
+    }

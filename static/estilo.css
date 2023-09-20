@@ -34,51 +34,9 @@
       font-weight: 600;
     }
 
-
-  /* definidas por min */
-    /* Estado de pedido */
-    .order{
-      border:1px solid transparent;
-      border-radius:20px;
-      padding:10px;
-    }
-    .order[order-state="pagado"] {
-      color: #6875b6;
-      background-color:#d4ffd4;
-    }
-  
-    .order[order-state="pendiente"] {
-      color: #6875b6;
-      background-color:#ffe9c9;
-    }
-  
-    .order[order-state="cancelado"] {
-      color: #6875b6;
-      background-color:#ffc8c8;
-    }
-   
-    /*.info-client > .imagen-client{
-      border:1px solid black;
-      border-radius:50%;
-      background-color:#9696ed;
-      margin: 9px;
-    }*/
    
 
 
-@media (min-width:600px){
-  
- 
-    span[name="frecha2"]{
-      /*border: 1px solid transparent;
-      border-radius: 50%;
-      background-color: #81a1e5;*/
-      /*display: inline-block;*/
-   
-      margin-left: 10px;
-      width: 20px;
-    }
-  } 
 
 @media (max-width:600px){
   
@@ -94,22 +52,7 @@
       display:none;
     }
     
-    /* facturas */
-    .facturas{
-        margin: 5vw;
-      }
-    .facturas > div {
-      flex-wrap: wrap;
-    }
-    .wrape-ultimas-facturas{
-        border:1px solid #e3e3e3;
-        border-radius: 10px;
-        background-color:white;
-        /*box-shadow: inset 11px 10px 15px -3px rgba(77, 169, 201 ,0.7);*/
-        box-shadow: 11px 10px 15px -3px rgba(77, 169, 201 ,0.5);
-        margin:10px;
-        flex:1;
-      }
+   
 
 
   /* lista-nomes */

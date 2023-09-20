@@ -1,0 +1,18 @@
+@media (max-width:600px){
+   /* facturas */
+    .facturas{
+        margin: 5vw;
+      }
+    .facturas > div {
+      flex-wrap: wrap;
+    }
+    .wrape-ultimas-facturas{
+        border:1px solid #e3e3e3;
+        border-radius: 10px;
+        background-color:white;
+        /*box-shadow: inset 11px 10px 15px -3px rgba(77, 169, 201 ,0.7);*/
+        box-shadow: 11px 10px 15px -3px rgba(77, 169, 201 ,0.5);
+        margin:10px;
+        flex:1;
+      }
+}
