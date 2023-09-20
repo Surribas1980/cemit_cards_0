@@ -19,7 +19,7 @@ const pintarListaDatosUser = (listaOrdeada,listaUsuarios,contador,internoLista,n
       <div>${listaUsuarios[contador].age}</div>
     </div>
     <div name="datos-unicos"><div>${listaUsuarios[contador].orders}</div></div>
-    <div name="datos-unicos"><div>${listaUsuarios[contador].spent} €</div></div>
+    <div name="datos-unicos"><div name="gastado"><span>${listaUsuarios[contador].spent} €</span><span>&gt;</span></div></div>
     `;
   listaOrdeada.append(internoLista)
 }

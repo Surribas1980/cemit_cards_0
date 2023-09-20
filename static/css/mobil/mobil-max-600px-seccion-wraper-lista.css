@@ -3,6 +3,10 @@
       display:none;
     }
    /* lista-nomes */
+  div[name="gastado"] {
+    display: flex;
+    justify-content: space-evenly;
+  }
   .lista-nomes{
      
      text-align: left;
@@ -12,12 +16,12 @@
      color: #647ba5;
     }
   .lista-nomes ~ div {
-    font-size: 10px;
+    /*font-size: 10px;
     text-align: left;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;*/
+    display:none;
    }
   li[id*="datosUsuario"] > div:nth-child(1),
-  li[id*="datosUsuario"] > div:nth-child(2),
   li[id*="datosUsuario"] > div:nth-child(4),
   li[id*="datosUsuario"] > div:nth-child(5){
      display:none;

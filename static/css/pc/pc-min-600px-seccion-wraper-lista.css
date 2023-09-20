@@ -1,0 +1,5 @@
+@media(min-width:600px){
+  div[name="gastado"] > span:nth-child(2){
+    display:none;
+  }
+}
