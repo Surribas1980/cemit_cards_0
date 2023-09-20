@@ -1,0 +1,7 @@
+ div[name="estado"]{
+      font-size:18px;
+      text-transform:uppercase;
+      color:white;
+      text-align: left;
+      font-weight: 600;
+    }

@@ -8,73 +8,9 @@
     border: none;
   }
  
-
-    #datosUsuario0{
-        font-family: 'Raleway', sans-serif;
-        background-color: #e7e7e7;
-        padding: 2vh;
-        font-size: 18px;
-        border: 1px solid transparent;
-        border-top-right-radius: 5px;
-        border-top-left-radius: 5px;
-    }
  
-    .material-symbols-outlined {
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 200,
-    'GRAD' 0,
-    'opsz' 24
-    }
-  div[name="estado"]{
-      font-size:18px;
-      text-transform:uppercase;
-      color:white;
-      text-align: left;
-      font-weight: 600;
-    }
 
    
 
 
-
-@media (max-width:600px){
-  
-  /***************/
-    ul{
-      /*display:none;*/
-    }
-
-    div[name="estado"]{
-      font-size:14px;
-    }
-    li div[name="datos-unicos"],li div[name="status"],li div[name="datos-persoais"]{
-      display:none;
-    }
-    
-   
-
-
-  /* lista-nomes */
-  .lista-nomes{
-     
-     text-align: left;
-     font-size: 17px;
-     font-family: 'Poppins', sans-serif;
-     font-weight: 600;
-     color: #647ba5;
-    }
-  .lista-nomes ~ div {
-    font-size: 10px;
-    text-align: left;
-    font-family: 'Poppins', sans-serif;
-   }
-
-  /* lista-clientes */
-  .titulos-lista-clientes{
-      font-family:fantasy;
-      display:flex;
-      justify-content:space-evenly;
-    }
-}
 

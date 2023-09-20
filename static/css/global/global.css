@@ -1,4 +1,5 @@
 @import "./global-card-cliente.css";
-@import "./global-lista.css";
-@import "./global-ultimas-facturas.css";
+@import "./global-seccion-facturas.css";
+@import "./global-seccion-ingresos-pendentes.css";
+@import "./global-seccion-wraper-lista.css";
 @import "./global-xenerico.css";

@@ -1,0 +1,19 @@
+@media (max-width:600px){
+  li div[name="datos-unicos"],li div[name="status"],li div[name="datos-persoais"]{
+      display:none;
+    }
+   /* lista-nomes */
+  .lista-nomes{
+     
+     text-align: left;
+     font-size: 17px;
+     font-family: 'Poppins', sans-serif;
+     font-weight: 600;
+     color: #647ba5;
+    }
+  .lista-nomes ~ div {
+    font-size: 10px;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+   }
+}
