@@ -1,9 +1,7 @@
 @import "./css/global/global.css";
-
-@import "./css/mobil/mobil-max-600px-corpo.css";
-@import "./css/pc/pc-min-600px-corpo.css";
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Raleway:wght@600&display=swap');
+@import "./css/mobil/mobil.css";
+@import "./css/pc/pc.css";
+@import "./css/tipografias/tipo-letras.css";
   *{
     margin:0;
     padding:0;
@@ -156,13 +154,7 @@
     li div[name="datos-unicos"],li div[name="status"],li div[name="datos-persoais"]{
       display:none;
     }
-    /*li div[name="status"]{
-      display:none;
-    }
-   
-    li div[name="datos-persoais"]{
-      display:none;
-    }*/
+    
     /* facturas */
     .facturas{
         margin: 5vw;
