@@ -5,7 +5,7 @@ const pintarListaDatosUser = (listaOrdeada,listaUsuarios,contador,internoLista,n
     <div name="datos-unicos">
       <div>status</div>
     </div> 
-    <div><img class="imagen-client" src=${imagenes} ></div>
+    <div><img alt="imaxen-cliente" class="imagen-client" src=${imagenes} ></div>
     <div name="lista-usuarios">
      <div>
       <div class="lista-nomes">${nomes}</div>

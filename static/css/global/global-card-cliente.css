@@ -1,0 +1,41 @@
+ /*CARD CLIENT*/
+    .card-client{
+      border:1px solid #979393;
+      width: fit-content;
+      border-top-left-radius: 5px;
+      border-top-right-radius:5px;
+      box-shadow: 10px 10px 11px -2px rgba(0,0,0,0.75);
+    }
+    .card-cliente > .title-client{
+      background-color: beige;
+    }
+ .imagen-client{
+      border:1px solid transparent;
+      border-radius:50%;
+      /*background-color:#9696ed;*/
+      margin: 3px;
+      width: 6vh;
+    }
+    .card-client > .info-client{
+      display:flex;
+    }
+    .nombre-client{
+      font-family: fantasy;
+      list-style: none;
+      text-align: end;
+      letter-spacing: 1px;
+    }
+    .notas-client{
+      font-family: monospace;
+      list-style: none;
+      margin-top: 5px;
+    }
+    .lista-client{
+      margin: 10px;
+    }
+    .gastado-client{
+      list-style:none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }

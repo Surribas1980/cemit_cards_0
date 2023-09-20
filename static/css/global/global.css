@@ -1,0 +1,59 @@
+@import "./global-card-cliente.css";
+@import "./global-lista.css";
+@import "./global-ultimas-facturas.css";
+
+section.central{
+    text-align:center;
+  }
+  li{
+    list-style:none;
+    display:flex;
+    justify-content:space-evenly;
+    text-align: center;
+  }
+  li:nth-child(2n){
+    background-color: #ececed;
+  }
+  li div{
+    flex: 1;
+    text-align: center;
+  }
+  li div[name="lista-usuarios"]{
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        align-items: center;
+        
+      }
+  li div[name="datos-persoais"]{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    font-family: 'Poppins', sans-serif;
+  }
+  li div[name="datos-unicos"]{
+    display: flex;
+    align-self: center;
+    font-family: 'Poppins', sans-serif;
+  }
+    h3{
+      margin:0;
+      /*border-bottom: 1px solid black;*/
+      padding:5px;
+    }
+    h3[name="card-client"]{
+      font-family: fantasy;
+      letter-spacing:1.5px;
+    }
+    span[name="avisos"]{
+      font-family:'Poppins',fantasy;
+      font-size:24px;
+      margin:5vh;
+      text-align:left;
+      text-transform: uppercase;
+    }
+    ul{
+      padding: 0;
+      margin:10px;
+      box-shadow: -16px 17px 56px 16px rgba(0,0,0,0.1);
+    }

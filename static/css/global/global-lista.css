@@ -1,0 +1,27 @@
+    /* LISTA CLIENTES */
+    .wraper-lista{
+      margin:5vw;
+    }
+    .lista-clientes{
+      /*border:1px solid #b9d0d6;*/
+      border-radius:5px;
+      
+    }
+    .titulos-lista-clientes{
+      font-family:fantasy;
+      display:flex;
+      justify-content:space-evenly;
+    }
+    .lista-nomes{
+     
+     text-align: left;
+     font-size: 17px;
+     font-family: 'Poppins', sans-serif;
+     font-weight: 600;
+     color: #647ba5;
+    }
+    .lista-nomes ~ div {
+    font-size: 10px;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+   }

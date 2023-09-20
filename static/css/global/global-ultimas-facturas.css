@@ -1,0 +1,64 @@
+      /* facturas */
+    .facturas{
+      margin: 5vw;
+    }
+    .facturas > div{
+      display:flex;
+      justify-content:space-between;
+      font-family:  'Raleway', sans-serif;
+    }
+    /* CARD Ultimas Facturas */
+
+    .wrape-ultimas-facturas{
+      border:1px solid #e3e3e3;
+      border-radius: 10px;
+      background-color:white;
+      /*box-shadow: inset 11px 10px 15px -3px rgba(77, 169, 201 ,0.7);*/
+      box-shadow: 11px 10px 15px -3px rgba(77, 169, 201 ,0.5);
+      margin:10px;
+      flex:1;
+    }
+    
+    .ultimas-facturas{
+      display:flex;
+      flex-direction:column;
+      /*gap:10px;*/
+      justify-content:space-evenly;
+    }
+.header-ultimas-facturas{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      
+      padding: 3vh 3vh 0;
+    }
+    .header-ultimas-facturas > .nome-ultimas-facturas{
+      font-size:2.5vh;
+    }
+ 
+    .dinero-ultimas-facturas{
+      display:flex;
+      flex-direction:column;
+      font-size: 5vh;
+      font-family:'Poppins',sans-serif;
+      font-weight:600;
+     padding: 0 3vh 3vh;
+    }
+    .mensaxe{
+      font-size: 2vh;
+      
+      color:#a2a2a2;
+    }
+    .footer-ultimas-facturas{
+      display:flex;
+      justify-content:center;
+      align-items: center;
+      background-color:#ececed;
+      border-bottom-left-radius:8px;
+      border-bottom-right-radius:8px;
+      padding: 2vh;
+    }
+    .footer-ultimas-facturas:hover{
+      background-color:#99c1f1;
+      cursor:pointer;
+    }
