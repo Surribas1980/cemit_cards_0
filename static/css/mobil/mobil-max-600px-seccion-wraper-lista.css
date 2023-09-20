@@ -1,7 +1,8 @@
 @media (max-width:600px){
-  li div[name="datos-unicos"],li div[name="status"],li div[name="datos-persoais"]{
+  li div[name="status"]{
       display:none;
     }
+  
    /* lista-nomes */
   .lista-nomes{
      
@@ -16,4 +17,10 @@
     text-align: left;
     font-family: 'Poppins', sans-serif;
    }
+  li[id*="datosUsuario"] > div:nth-child(1),
+  li[id*="datosUsuario"] > div:nth-child(2),
+  li[id*="datosUsuario"] > div:nth-child(4),
+  li[id*="datosUsuario"] > div:nth-child(5){
+     display:none;
+  }
 }

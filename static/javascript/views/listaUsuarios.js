@@ -5,7 +5,9 @@ const pintarListaDatosUser = (listaOrdeada,listaUsuarios,contador,internoLista,n
     <div name="datos-unicos">
       <div>status</div>
     </div> 
-    <div><img alt="imaxen-cliente" class="imagen-client" src=${imagenes} ></div>
+    <div name="imagen-client">
+      <img alt="imaxen-cliente" class="imagen-client" src=${imagenes} >
+    </div>
     <div name="lista-usuarios">
      <div>
       <div class="lista-nomes">${nomes}</div>
@@ -57,7 +59,8 @@ const pintarLista = (listaUsuarios,cincoUsuarios,listUsers)=>{
               <div>Gastado</div>
     `;
     listaOrdeada.append(internoLista)
-    }else{
+    }
+    else{
       internoLista.setAttribute('id',`datosUsuario${contador}`)
       let imaxen = cincoUsuarios.results[contador].picture.large;
       let nomes = cincoUsuarios.results[contador].name.first;
