@@ -1,0 +1,43 @@
+@media (max-width:600px){
+    /* etiquetas */
+      div[name="money-client"]{
+      text-align: left;
+      display: inline;
+      font-size: 4vh;
+      color:white;
+    }
+    div[name="ver-todo"] {
+      display: inline;
+      border-radius: 20px;
+      background-color: #5599ec;
+      border: 1px solid transparent;
+      padding: 1vh;
+      width: max-content;
+      padding: 0.2rem;
+      color: white;
+      font-weight: 600;
+    }
+      /* ingresos */
+    .ingresos-pendentes{
+      flex-wrap: wrap;
+      gap:1vw;
+    }
+  
+    .ingresos-pendentes > article{
+      
+      text-align: left;
+      border-bottom: 1px solid #f9f7f7;
+      padding: 3vw;
+      font-family: 'Poppins',fantasy;
+      /* Arriba | Derecha | Abajo | Izquierda */
+      /*margin: 0vw 5vw 0vw 5vw;*/
+    }
+    .ingresos-pendentes > article[name="terceira"]{
+      border:none;
+    }  
+    .wraper-ingresos-pendentes{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+}
