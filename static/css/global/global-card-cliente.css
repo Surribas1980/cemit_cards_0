@@ -9,7 +9,7 @@
     .card-cliente > .title-client{
       background-color: beige;
     }
- .imagen-client{
+    .imagen-client{
       border:1px solid transparent;
       border-radius:50%;
       /*background-color:#9696ed;*/

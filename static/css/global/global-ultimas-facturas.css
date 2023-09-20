@@ -25,7 +25,7 @@
       /*gap:10px;*/
       justify-content:space-evenly;
     }
-.header-ultimas-facturas{
+    .header-ultimas-facturas{
       display:flex;
       align-items:center;
       justify-content:space-between;
