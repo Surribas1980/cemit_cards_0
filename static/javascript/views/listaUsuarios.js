@@ -19,9 +19,11 @@ const pintarListaDatosUser = (listaOrdeada,listaUsuarios,contador,internoLista,n
       <div>${listaUsuarios[contador].age}</div>
     </div>
     <div name="datos-unicos"><div>${listaUsuarios[contador].orders}</div></div>
-    <div name="datos-unicos"><div name="gastado"><span>${listaUsuarios[contador].spent} €</span><span>&gt;</span></div></div>
+    <div name="datos-unicos"><div name="gastado"><span>${listaUsuarios[contador].spent} €</span>
+    <span ver-usuario="ver-usuario">&gt;</span></div></div>
     `;
   listaOrdeada.append(internoLista)
+  
 }
 
 const pintarLista = (listaUsuarios,cincoUsuarios,listUsers)=>{
@@ -56,7 +58,7 @@ const pintarLista = (listaUsuarios,cincoUsuarios,listUsers)=>{
               </div>
               
               <div name="status">Num Pedido</div>
-              <div>Gastado</div>
+              <div name="titulo-gastado">Gastado</div>
     `;
     listaOrdeada.append(internoLista)
     }

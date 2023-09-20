@@ -3,6 +3,10 @@
       display:none;
     }
    /* lista-nomes */
+  div[name="titulo-gastado"]{
+    text-align: right;
+    margin-right: 3.5vw;
+  }
   div[name="gastado"] {
     display: flex;
     justify-content: space-evenly;
