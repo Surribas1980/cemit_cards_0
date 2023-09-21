@@ -1,5 +1,7 @@
 import {peticionUsersToApis} from "./datos/datos.peticioneshttps.js";
-import {pintarLista,pintarListaDatosUser as dataUsers} from "./views/listaUsuarios.js";
+import { nomeAtributo } from "./datos/datos.js";
+import {pintarLista} from "./views/listaUsuarios.js";
+import {insertEventVerListInMovil as eventoLista, deletedWithQuerySelector as quitarGif} from "./helpers.js";
 const fetchData = async (url) => {
     const response = await fetch(url);
     const data = await response.json();
@@ -26,27 +28,11 @@ const fetchData = async (url) => {
 const main = async () =>{
 
   const datosUsers = await peticionUsersToApis();
-  console.log('datosUsers.',datosUsers)
 
-  if(datosUsers != undefined){
-     pintarLista(datosUsers.slingAcademy,datosUsers.randomUser,dataUsers)
-  
-  if(datosUsers.slingAcademy == "" && datosUsers.randomUser == ""){
-          console.log('chegando datos');
-          }
-          else{
-            console.log('chegaron os datos: ',datosUsers.randomUser,datosUsers.randomUser.results.length);
-            let num = datosUsers.randomUser.info.results;
-            
-            console.log('a ver se vai',num,document.querySelectorAll('[ver-usuario]')[0])
-            for(let contador = 0; contador < num - 1; contador ++){
-              
-              document.querySelectorAll('[ver-usuario]')[contador].addEventListener('click',(event)=>{
-                console.log('contador: ',contador)
-              })
-            }
-            
-          }
+  if(datosUsers !== undefined){
+    quitarGif(nomeAtributo.gifCar)
+    pintarLista(datosUsers);
+    eventoLista(datosUsers);
   }
  
  

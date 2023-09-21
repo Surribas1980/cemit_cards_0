@@ -26,9 +26,9 @@ const pintarListaDatosUser = (listaOrdeada,listaUsuarios,contador,internoLista,n
   
 }
 
-const pintarLista = (listaUsuarios,cincoUsuarios,listUsers)=>{
-  console.log('pintar a lista dos seguintes usuarios: ',listaUsuarios,cincoUsuarios)
-  //const numUsuarios = listaUsuarios.length;//caso real
+const pintarLista = (datosUsers)=>{
+  
+
   const numUsuarios = 9;
   const listaOl = document.createElement('ul',{is:"unha-lista"});
   const lugarDeRefencia = document.querySelector('[lista-clientes]');
@@ -64,9 +64,9 @@ const pintarLista = (listaUsuarios,cincoUsuarios,listUsers)=>{
     }
     else{
       internoLista.setAttribute('id',`datosUsuario${contador}`)
-      let imaxen = cincoUsuarios?.results[contador].picture.large;
-      let nomes = cincoUsuarios?.results[contador].name.first;
-      listUsers(listaOrdeada,listaUsuarios,contador,internoLista,nomes,`${imaxen}`);
+      let imaxen = datosUsers.randomUser?.results[contador].picture.large;
+      let nomes = datosUsers.randomUser?.results[contador].name.first;
+      pintarListaDatosUser(listaOrdeada,datosUsers.slingAcademy,contador,internoLista,nomes,`${imaxen}`);
     }
     //listaOrdeada.append(internoLista)
   }

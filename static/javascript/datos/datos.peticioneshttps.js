@@ -1,6 +1,4 @@
-import { dato,nomeAtributo } from "./datos.js";
-import {pintarListaDatosUser as dataUsers, pintarLista } from "../views/listaUsuarios.js";
-import {deletedWithQuerySelector as quitarGif} from "../helpers.js";
+import { dato } from "./datos.js";
 
 const peticionUrl = async (url) => {
   
@@ -10,12 +8,11 @@ const peticionUrl = async (url) => {
   return data;
 }
 const peticionUsersToApis = async () => {
-    console.log('chegaron os datos: ');
-
-    const datosUsers = {}
+  const datosUsers = {}
+  
     datosUsers.slingAcademy = await dato.slingAcademy();
     datosUsers.randomUser = await dato.randomUser();
-    quitarGif(nomeAtributo.gifCar)
+    
     return datosUsers;
    
   }
