@@ -1,34 +1,12 @@
-import {tituloLista} from "../datos/datos.js";
-const pintarListaDatosUser = (listaOrdeada,listaUsuarios,contador,internoLista,nomes,imagenes) => {
-  console.log('imagenes: ',imagenes)
-    
-   internoLista.innerHTML = `
-    <div name="datos-unicos">
-      <div>status</div>
-    </div> 
-    <div name="imagen-client">
-      <img alt="imaxen-cliente" class="imagen-client" src=${imagenes} >
-    </div>
-    <div name="lista-usuarios">
-     <div>
-      <div class="lista-nomes">${nomes}</div>
-      <div>${listaUsuarios[contador].email}</div>
-     </div>
-    </div>
-    <div name="datos-persoais">
-      <div>${listaUsuarios[contador].job}</div>
-      <div>${listaUsuarios[contador].age}</div>
-    </div>
-    <div name="datos-unicos"><div>${listaUsuarios[contador].orders}</div></div>
-    <div name="datos-unicos"><div name="gastado"><span>${listaUsuarios[contador].spent} €</span>
-    <span ver-usuario="ver-usuario">&gt;</span></div></div>
-    `;
+import {datosLista} from "../datos/datos.js";
+const pintarListaDatosUser = (listaOrdeada,listaUsuarios,contador,internoLista,nomes,imaxen) => {
+  datosLista.elementosDaLista(listaUsuarios,contador,internoLista,nomes,imaxen)
   listaOrdeada.append(internoLista)
   
 }
 const pintoTitulo = (internoLista,contador)=>{
   internoLista.setAttribute('id',`datosUsuario${contador}`)
-  internoLista.innerHTML = `${tituloLista}`;
+  internoLista.innerHTML = `${datosLista.tituloLista}`;
   listaOrdeada.append(internoLista)
 }
 const pintoLista = (datosUsers,internoLista,contador)=>{
