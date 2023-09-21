@@ -26,23 +26,23 @@ const pintarListaDatosUser = (listaOrdeada,listaUsuarios,contador,internoLista,n
   listaOrdeada.append(internoLista)
   
 }
+const pintoTitulo = (internoLista,contador)=>{
+  internoLista.setAttribute('id',`datosUsuario${contador}`)
+  internoLista.innerHTML = `${tituloLista}`;
+  listaOrdeada.append(internoLista)
+}
+const pintoLista = (datosUsers,internoLista,contador)=>{
+  internoLista.setAttribute('id',`datosUsuario${contador}`)
+      let imaxen = datosUsers.randomUser?.results[contador].picture.large;
+      let nomes = datosUsers.randomUser?.results[contador].name.first;
+      pintarListaDatosUser(listaOrdeada,datosUsers.slingAcademy,contador,internoLista,nomes,`${imaxen}`);
+}
 const insertandoIdToList = (datosUsers)=>{
   
   for(let contador = 0; contador < datosUsers.randomUser.results.length ;contador ++){
 
     let internoLista = document.createElement('li',{is:"o-li"})
-    
-    if(contador == 0){
-      internoLista.setAttribute('id',`datosUsuario${contador}`)
-      internoLista.innerHTML = `${tituloLista}`;
-      listaOrdeada.append(internoLista)
-    }
-    else{
-      internoLista.setAttribute('id',`datosUsuario${contador}`)
-      let imaxen = datosUsers.randomUser?.results[contador].picture.large;
-      let nomes = datosUsers.randomUser?.results[contador].name.first;
-      pintarListaDatosUser(listaOrdeada,datosUsers.slingAcademy,contador,internoLista,nomes,`${imaxen}`);
-    }
+    contador === 0 ? pintoTitulo(internoLista,contador) : pintoLista(datosUsers,internoLista,contador);
     
   }
 }
