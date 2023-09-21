@@ -1,6 +1,5 @@
-import { dato } from "./datos/datos.js";
-import {pintarListaDatosUser as dataUsers, pintarLista } from "./views/listaUsuarios.js"
-//let verDatos = document.querySelector('[ver-usuario]');
+import {fetchData2} from "./datos/datos.peticioneshttps.js";
+
 const fetchData = async (url) => {
     const response = await fetch(url);
     const data = await response.json();
@@ -25,39 +24,9 @@ const fetchData = async (url) => {
 
 
 const funcionPeticionDatos = () =>{
-  let datos = "";
-  let datos2 = "";
-  const fetchData2 = async () => {
-    console.log('chegaron os datos: ');
-    const data = await dato.slingAcademy();
-    datos = data;
-    const data2 = await dato.randomUser();
-    datos2 = data2;
-   
-    let datoImaxen = document.querySelector('[imaxen-de-carga]')
-    datoImaxen.remove()
-    pintarLista(datos,datos2,dataUsers);
-          if(datos == "" && datos2 == ""){
-          console.log('chegando datos');
-          }else{
-            console.log('chegaron os datos: ',data2,data2.results.length);
-            let num = data2.info.results;
-            
-            console.log('a ver se vai',num,document.querySelectorAll('[ver-usuario]')[0])
-            for(let contador = 0; contador < num - 1; contador ++){
-              
-              document.querySelectorAll('[ver-usuario]')[contador].addEventListener('click',(event)=>{
-              console.log('contador: ',contador)
-            })
-            }
-            
-        }
-  }
+
   fetchData2();
-  if(datos == "" && datos2 == ""){
-    console.log('chegando datos fora');
-  }
-  //(datos == "" && datos2 == "") ? console.log('chegando datos') : console.log('chegaron os datos: ');
+ 
 }
 
 funcionPeticionDatos()
