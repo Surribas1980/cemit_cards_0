@@ -1,5 +1,7 @@
-import { dato } from "./datos.js";
+import { dato,nomeAtributo } from "./datos.js";
 import {pintarListaDatosUser as dataUsers, pintarLista } from "../views/listaUsuarios.js";
+import {deletedWithQuerySelector as quitarGif} from "../helpers.js";
+
 const peticionUrl = async (url) => {
   
   const response = await fetch(url);
@@ -7,15 +9,14 @@ const peticionUrl = async (url) => {
 
   return data;
 }
-const fetchData2 = async () => {
+const peticionUsersToApis = async () => {
     console.log('chegaron os datos: ');
     const datos = await dato.slingAcademy();
     const datos2 = await dato.randomUser();
     
-   
-    let datoImaxen = document.querySelector('[imaxen-de-carga]')
-    datoImaxen.remove()
+    quitarGif(nomeAtributo.gifCar)
     pintarLista(datos,datos2,dataUsers);
+  
           if(datos == "" && datos2 == ""){
           console.log('chegando datos');
           }else{
@@ -34,5 +35,5 @@ const fetchData2 = async () => {
   }
 export {
   peticionUrl,
-  fetchData2
+  peticionUsersToApis
 }

@@ -1,4 +1,4 @@
-import {fetchData2} from "./datos/datos.peticioneshttps.js";
+import {peticionUsersToApis} from "./datos/datos.peticioneshttps.js";
 
 const fetchData = async (url) => {
     const response = await fetch(url);
@@ -23,13 +23,13 @@ const fetchData = async (url) => {
 }
 
 
-const funcionPeticionDatos = () =>{
+const main = () =>{
 
-  fetchData2();
+  peticionUsersToApis();
  
 }
 
-funcionPeticionDatos()
+main()
 
 
 

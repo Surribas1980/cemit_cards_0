@@ -9,7 +9,10 @@ const dato = {
     return await peticionUrl(urlApi.SlingAcademy)
   }
 }
-
+const nomeAtributo = {
+  gifCar:'imaxen-de-carga'
+}
 export {
-  dato
+  dato,
+  nomeAtributo
 }
