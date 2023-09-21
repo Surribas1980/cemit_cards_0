@@ -1,3 +1,4 @@
+import {tituloLista} from "../datos/datos.js";
 const pintarListaDatosUser = (listaOrdeada,listaUsuarios,contador,internoLista,nomes,imagenes) => {
   console.log('imagenes: ',imagenes)
     
@@ -25,42 +26,16 @@ const pintarListaDatosUser = (listaOrdeada,listaUsuarios,contador,internoLista,n
   listaOrdeada.append(internoLista)
   
 }
-
-const pintarLista = (datosUsers)=>{
+const insertandoIdToList = (datosUsers)=>{
   
-
-  const numUsuarios = 9;
-  const listaOl = document.createElement('ul',{is:"unha-lista"});
-  const lugarDeRefencia = document.querySelector('[lista-clientes]');
-  listaOl.setAttribute('id','listaOrdeada')
-  lugarDeRefencia.append(listaOl)
- 
-  for(let contador = 0; contador <= numUsuarios ;contador ++){
+  for(let contador = 0; contador < datosUsers.randomUser.results.length ;contador ++){
 
     let internoLista = document.createElement('li',{is:"o-li"})
     
     if(contador == 0){
       internoLista.setAttribute('id',`datosUsuario${contador}`)
-      internoLista.innerHTML = `
-              <div name="status">STATUS</div>
-              <div name="status"></div>
-              <div>Usuario
-                <!--
-                first-name
-                email
-                -->
-              </div>
-              <div name="status">Datos persoais
-                <!--
-                Traballo
-                Idade
-                -->
-              </div>
-              
-              <div name="status">Num Pedido</div>
-              <div name="titulo-gastado">Gastado</div>
-    `;
-    listaOrdeada.append(internoLista)
+      internoLista.innerHTML = `${tituloLista}`;
+      listaOrdeada.append(internoLista)
     }
     else{
       internoLista.setAttribute('id',`datosUsuario${contador}`)
@@ -68,8 +43,16 @@ const pintarLista = (datosUsers)=>{
       let nomes = datosUsers.randomUser?.results[contador].name.first;
       pintarListaDatosUser(listaOrdeada,datosUsers.slingAcademy,contador,internoLista,nomes,`${imaxen}`);
     }
-    //listaOrdeada.append(internoLista)
+    
   }
+}
+const pintarLista = (datosUsers)=>{
+  
+  const listaOl = document.createElement('ul',{is:"unha-lista"});
+  const lugarDeRefencia = document.querySelector('[lista-clientes]');
+  listaOl.setAttribute('id','listaOrdeada')
+  lugarDeRefencia.append(listaOl)
+  insertandoIdToList(datosUsers);
 }
 
 export {
