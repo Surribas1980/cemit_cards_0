@@ -64,8 +64,8 @@ const pintarLista = (listaUsuarios,cincoUsuarios,listUsers)=>{
     }
     else{
       internoLista.setAttribute('id',`datosUsuario${contador}`)
-      let imaxen = cincoUsuarios.results[contador].picture.large;
-      let nomes = cincoUsuarios.results[contador].name.first;
+      let imaxen = cincoUsuarios?.results[contador].picture.large;
+      let nomes = cincoUsuarios?.results[contador].name.first;
       listUsers(listaOrdeada,listaUsuarios,contador,internoLista,nomes,`${imaxen}`);
     }
     //listaOrdeada.append(internoLista)
