@@ -25,9 +25,15 @@
     font-family: 'Poppins', sans-serif;*/
     display:none;
    }
-  li[id*="datosUsuario"] > div:nth-child(1),
-  li[id*="datosUsuario"] > div:nth-child(4),
-  li[id*="datosUsuario"] > div:nth-child(5){
+  li[id*="datosUsuario"] > .novo-div > div:nth-child(1),
+  li[id*="datosUsuario"] > .novo-div > div:nth-child(4),
+  li[id*="datosUsuario"] > .novo-div > div:nth-child(5),
+  .ver-info-aux{
      display:none;
   }
+  .modifico-ver-info-aux{
+    display:flex;
+    
+  }
+  
 }
