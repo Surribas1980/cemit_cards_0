@@ -60,3 +60,7 @@ section.central{
 li[name="lista"]{
   flex-direction: column;
 }
+.info-aux > div {
+  display:none;
+}
+

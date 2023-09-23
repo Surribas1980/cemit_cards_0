@@ -27,13 +27,11 @@
    }
   li[id*="datosUsuario"] > .novo-div > div:nth-child(1),
   li[id*="datosUsuario"] > .novo-div > div:nth-child(4),
-  li[id*="datosUsuario"] > .novo-div > div:nth-child(5),
-  .ver-info-aux{
+  li[id*="datosUsuario"] > .novo-div > div:nth-child(5){
      display:none;
   }
-  .modifico-ver-info-aux{
-    display:flex;
-    
+ 
+  .info-aux > div {
+    display:none;
   }
-  
 }

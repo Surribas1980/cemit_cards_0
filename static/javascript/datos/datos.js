@@ -54,15 +54,17 @@ const datosLista = {
         <div name="datos-unicos"><div name="gastado"><span>${listaUsuarios[contador].spent} €</span>
         <span ver-usuario="ver-usuario">&gt;</span></div></div>
     </div>
-    <div class="ver-info-aux">
-        <div name="datos-persoais">
-          <div>Artist</div>
-          <div>71</div>
+    <div class="info-aux">
+      <div name="info-aux-${contador}">
+        <div name="datos-persoais" >
+          <div>${listaUsuarios[contador].job}</div>
+          <div>${listaUsuarios[contador].age}</div>
         </div>
         <div name="datos-unicos">
           <div>status</div>
         </div>
         <div name="datos-unicos"><div>11</div></div>
+      </div>  
     </div>
     `;
   }

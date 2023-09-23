@@ -18,7 +18,6 @@ const pintoLista = (datosUsers,internoLista,contador)=>{
 }
 const insertandoIdToList = (datosUsers)=>{
 
- console.log('datosUsers.randomUser: ',datosUsers.randomUser)
   datosUsers.randomUser.results.map(
     function(elementoDoArray,index){
       let internoLista = document.createElement('li',{is:"o-li"})
