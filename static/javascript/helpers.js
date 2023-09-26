@@ -13,6 +13,8 @@ const refDoc = {
 }
 const modificoSTyle = (styleElement,contador)=>{
                 (styleElement.transform == "rotate(0deg)") ?  styleElement.transform = "rotate(90deg)" : styleElement.transform = "rotate(0deg)";
+          
+                //refDoc.infoAux(contador).classList.toggle("ver")
                 if(refDoc.infoAux(contador).style.display === 'none'){
                   refDoc.infoAux(contador).style.display = 'flex';
                   refDoc.infoAux(contador).style.border = '1px solid white';
@@ -27,9 +29,7 @@ const insertEventVerListInMovil = (condicion)=>{
             for(let contador = 0; contador < condicion; contador ++){
               let ref = refDoc.pestanaUser(contador,atr.verUser);
               
-              ref.addEventListener('click',(event)=>{ 
-                modificoSTyle(event.target.style,contador)
-              })
+              ref.addEventListener('click',(event)=>{ modificoSTyle(event.target.style,contador) })
             }
 }
 export{

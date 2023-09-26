@@ -31,7 +31,10 @@
      display:none;
   }
  
-  .info-aux > div {
+  /*.info-aux > div {
     display:none;
+  }*/
+  .ver{
+    display:flex;
   }
 }
