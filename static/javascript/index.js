@@ -1,14 +1,15 @@
-import {peticionUsersToApis} from "./datos/datos.peticioneshttps.js";
-import { nomeAtributo } from "./datos/datos.js";
+import {peticionUsersToApis as users} from "./datos/datos.peticioneshttps.js";
+import { nomeAtributo as atr} from "./datos/datos.js";
 import {pintarLista} from "./views/listaUsuarios.js";
-import {insertEventVerListInMovil as eventoLista, deletedWithQuerySelector as quitarGif} from "./helpers.js";
+import {insertEventVerListInMovil as eventoLista,refDoc} from "./helpers.js";
 
 const main = async () =>{
 
-  const datosUsers = await peticionUsersToApis();
+  const datosUsers = await users();
 
   if(datosUsers !== undefined){
-    quitarGif(nomeAtributo.gifCar)
+  
+    refDoc.borra(atr.gifCar)
     pintarLista(datosUsers);
     eventoLista(datosUsers);
   }

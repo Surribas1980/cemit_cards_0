@@ -1,28 +1,40 @@
+import {nomeAtributo as atr} from "./datos/datos.js";
 
-
-const deletedWithQuerySelector = (atributo)=>{
-  document.querySelector(`[${atributo}]`).remove();
+const refDoc = {
+  borra : function(atributo){
+     document.querySelector(`[${atributo}]`).remove()
+  },
+  pestanaUser: function(contador,atributo){
+    return document.querySelectorAll(`[${atributo}]`)[contador];
+  },
+  infoAux : function(contador){
+    return document.getElementsByName(`info-aux-${contador+1}`)[0];
+  }
 }
+const modificoSTyle = (nodo,contador)=>{
+                (nodo.transform == "rotate(0deg)") ?  nodo.transform = "rotate(90deg)" : nodo.transform = "rotate(0deg)";
+                if(refDoc.infoAux(contador).style.display === 'none'){
+                  refDoc.infoAux(contador).style.display = 'flex';
+                  refDoc.infoAux(contador).style.border = '1px solid white';
+                  refDoc.infoAux(contador).style.margin = '4px';
+                }else{
+                  refDoc.infoAux(contador).style.display = 'none';
+                }
+}
+
 const insertEventVerListInMovil = (datosUsers)=>{
   let num = datosUsers.randomUser.info.results;
+  
             for(let contador = 0; contador < num - 1; contador ++){
+              let ref = refDoc.pestanaUser(contador,atr.verUser);
               
-              document.querySelectorAll('[ver-usuario]')[contador].addEventListener('click',(event)=>{
-              
-                const ref = document.getElementsByName(`info-aux-${contador+1}`)[0];
-               
-                (event.target.style.transform == "rotate(0deg)") ?  event.target.style.transform = "rotate(90deg)" : event.target.style.transform = "rotate(0deg)";
-                if(ref.style.display === 'none'){
-                  ref.style.display = 'flex';
-                  ref.style.border = '1px solid white';
-                  ref.style.margin = '4px';
-                }else{
-                  ref.style.display = 'none';
-                }
+              ref.addEventListener('click',(event)=>{  
+                let nodo = event.target.style;
+                modificoSTyle(nodo,contador)
               })
             }
 }
 export{
-  deletedWithQuerySelector,
-  insertEventVerListInMovil
+  insertEventVerListInMovil,
+  refDoc
 }

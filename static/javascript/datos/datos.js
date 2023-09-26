@@ -10,7 +10,8 @@ const dato = {
   }
 }
 const nomeAtributo = {
-  gifCar:'imaxen-de-carga'
+  gifCar:'imaxen-de-carga',
+  verUser : 'ver-usuario'
 }
 
 const datosLista = {

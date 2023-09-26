@@ -1,4 +1,5 @@
 import {datosLista} from "../datos/datos.js";
+
 const pintarListaDatosUser = (listaOrdeada,listaUsuarios,contador,internoLista,nomes,imaxen) => {
   datosLista.elementosDaLista(listaUsuarios,contador,internoLista,nomes,imaxen)
   listaOrdeada.append(internoLista)
