@@ -11,7 +11,7 @@ const main = async () =>{
   
     refDoc.borra(atr.gifCar)
     pintarLista(datosUsers);
-    eventoLista(datosUsers);
+    eventoLista(datosUsers.randomUser.info.results - 1);
   }
  
  

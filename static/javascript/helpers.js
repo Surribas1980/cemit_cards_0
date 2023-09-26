@@ -11,8 +11,8 @@ const refDoc = {
     return document.getElementsByName(`info-aux-${contador+1}`)[0];
   }
 }
-const modificoSTyle = (nodo,contador)=>{
-                (nodo.transform == "rotate(0deg)") ?  nodo.transform = "rotate(90deg)" : nodo.transform = "rotate(0deg)";
+const modificoSTyle = (styleElement,contador)=>{
+                (styleElement.transform == "rotate(0deg)") ?  styleElement.transform = "rotate(90deg)" : styleElement.transform = "rotate(0deg)";
                 if(refDoc.infoAux(contador).style.display === 'none'){
                   refDoc.infoAux(contador).style.display = 'flex';
                   refDoc.infoAux(contador).style.border = '1px solid white';
@@ -22,15 +22,13 @@ const modificoSTyle = (nodo,contador)=>{
                 }
 }
 
-const insertEventVerListInMovil = (datosUsers)=>{
-  let num = datosUsers.randomUser.info.results;
-  
-            for(let contador = 0; contador < num - 1; contador ++){
+const insertEventVerListInMovil = (condicion)=>{
+    
+            for(let contador = 0; contador < condicion; contador ++){
               let ref = refDoc.pestanaUser(contador,atr.verUser);
               
-              ref.addEventListener('click',(event)=>{  
-                let nodo = event.target.style;
-                modificoSTyle(nodo,contador)
+              ref.addEventListener('click',(event)=>{ 
+                modificoSTyle(event.target.style,contador)
               })
             }
 }
